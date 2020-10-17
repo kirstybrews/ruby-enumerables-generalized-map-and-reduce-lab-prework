@@ -13,7 +13,7 @@ end
 def reduce(source_array, starting_point = 0)
   total = starting_point
   i = 0 
-  if source_array[i].is_a? Integer
+  if !source_array[i].is_a? Integer
     total = source_array[i]
   end
   while i < source_array.length
